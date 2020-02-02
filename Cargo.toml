@@ -1,0 +1,14 @@
+[package]
+name = "fizzbuzz"
+description = "fizzbuzz is a command line tool to print all Fizz Buzz game entries from 1 to given range"
+
+authors = ["thinkofher <piaskupiasku@gmail.com>"]
+repository = "https://github.com/thinkofher/fizzbuzz"
+version = "0.1.0"
+
+edition = "2018"
+
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
