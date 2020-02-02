@@ -1,7 +1,7 @@
 use std::env;
 
 mod fizzbuzz;
-use fizzbuzz::FizzBuzz;
+use fizzbuzz::State;
 
 fn main() {
     // Skip first argument, because it is just name of the executable
@@ -24,11 +24,11 @@ fn main() {
 
     // Show all numbers from one to end of the range
     for number in start..=end {
-        match FizzBuzz::new(number) {
-            FizzBuzz::FizzBuzz => println!("FizzBuzz!"),
-            FizzBuzz::Fizz => println!("Fizz!"),
-            FizzBuzz::Buzz => println!("Buzz!"),
-            FizzBuzz::None(number) => println!("{}", number),
+        match State::new(number) {
+            State::FizzBuzz => println!("FizzBuzz!"),
+            State::Fizz => println!("Fizz!"),
+            State::Buzz => println!("Buzz!"),
+            State::None(number) => println!("{}", number),
         }
     }
 }
